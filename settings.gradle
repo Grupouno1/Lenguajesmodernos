@@ -1,0 +1,2 @@
+rootProject.name='Pendiente y funciones'
+include ':app'
