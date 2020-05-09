@@ -36,10 +36,11 @@
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="260dp"
+                    android:layout_height="199dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/image" />
+                    android:src="@drawable/image"></ImageView>
+
             </LinearLayout>
 
             <LinearLayout
@@ -81,6 +82,7 @@
                             android:textStyle="bold" />
 
                         <EditText
+                            android:id="@+id/x1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:hint="Ingrese un número"
@@ -104,6 +106,7 @@
                             android:textStyle="bold" />
 
                         <EditText
+                            android:id="@+id/y1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:hint="Ingrese un número"
@@ -144,6 +147,7 @@
                             android:textStyle="bold" />
 
                         <EditText
+                            android:id="@+id/x2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:hint="Ingrese un número"
@@ -167,6 +171,7 @@
                             android:textStyle="bold" />
 
                         <EditText
+                            android:id="@+id/y2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:hint="Ingrese un número"
@@ -184,6 +189,7 @@
                     tools:layout_editor_absoluteY="8dp">
 
                     <Button
+                        android:id="@+id/btnpendiente"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
@@ -193,6 +199,7 @@
                         android:textColor="@android:color/background_light" />
 
                     <Button
+                        android:id="@+id/btnfuncion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
@@ -227,7 +234,8 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <EditText
+                <TextView
+                    android:id="@+id/boxpendiente"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -242,11 +250,11 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <EditText
+                <TextView
+                    android:id="@+id/boxfuncion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:hint=""
                     android:textSize="20sp" />
 
             </LinearLayout>
