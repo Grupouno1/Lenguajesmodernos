@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btnfuncion:
                     funcion.setText( CrearFuncion());
                     break;
-                case R.id.boxpendiente:
+                case R.id.btnpendiente:
+                    pendiente.setText(CalcularPendiente());
                     break;
 
 
@@ -60,6 +61,27 @@ public class MainActivity extends AppCompatActivity {
 
         btnPendiente.setOnClickListener(Listen);
         btnFuncion.setOnClickListener(Listen);
+    }
+
+    protected String CalcularPendiente(){
+        try {
+            float fx1 = Float.parseFloat(x1.getText().toString());
+            float fy1 = Float.parseFloat(y1.getText().toString());
+            float fx2 = Float.parseFloat(x2.getText().toString());
+            float fy2 = Float.parseFloat(y2.getText().toString());
+            if (fx2 - fx1 == 0) {
+                return "El resultado se indetermina";
+            }
+            else{
+                float pendiente = (fy2 - fy1) / (fx2 - fx1);
+                String S_pendiente = String.valueOf(pendiente);
+                return S_pendiente;
+            }
+
+        }
+        catch (NumberFormatException e){
+            return "ingresa un dato válido. no  válido son: 1.coordenadas vacías 2.usar una (,) en vez de (.) 3.ingresar letras ";
+        }
     }
 
     protected String CrearFuncion(){
