@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             float fx2 = Float.parseFloat(x2.getText().toString());
             float fy2 = Float.parseFloat(y2.getText().toString());
             if (fx2 - fx1 == 0) {
-                return "El resultado se indetermina";
+                return  "0";
             }
             else{
                 float pendiente = (fy2 - fy1) / (fx2 - fx1);
