@@ -105,7 +105,8 @@ public class MainActivity extends AppCompatActivity {
                 float restar_x = parsex2 - parsex1;
 
                 if( (restar_x) == 0 ){
-                    return "la pendiente es 0 !!! no hay función. las x NO PUEDEN SER IGUALES";
+                    String constant = String.valueOf(parsey1);
+                    return "y = "+constant;
                 }else {
 
                     float m = restar_y/restar_x;
